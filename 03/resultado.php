@@ -57,13 +57,12 @@
 <body>
     <div class="container">
         <?php if ($_SERVER["REQUEST_METHOD"] == "POST"): 
-            // Recebe as notas e converte para float
+
             $nota1 = floatval($_POST['nota1']);
             $nota2 = floatval($_POST['nota2']);
             $nota3 = floatval($_POST['nota3']);
             $nota4 = floatval($_POST['nota4']);
 
-            // Calcula a média
             $media = ($nota1 + $nota2 + $nota3 + $nota4) / 4;
         ?>
             <h1>Resultado</h1>
